@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  artist_id: 1
+  description: MyString
+  year: 1
+  price: 9.99
+  painting_category_id: 1
+
+two:
+  name: MyString
+  artist_id: 1
+  description: MyString
+  year: 1
+  price: 9.99
+  painting_category_id: 1
