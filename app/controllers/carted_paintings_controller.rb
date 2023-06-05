@@ -1,0 +1,2 @@
+class CartedPaintingsController < ApplicationController
+end

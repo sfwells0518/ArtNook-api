@@ -1,0 +1,2 @@
+module CartedPaintingsHelper
+end
