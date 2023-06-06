@@ -7,7 +7,7 @@ class ArtistsController < ApplicationController
       fun_fact: params[:fun_fact],
     )
     if @artist.save
-      render json: { message: "Artist added successfully"}
+      render json: { message: "Artist created successfully"}
     else
       render json: { errors: @artist.errors.full_messages }
     end
@@ -30,6 +30,6 @@ class ArtistsController < ApplicationController
   def destroy
     @artist = artist.find_by(id: params[:id])
     @artist.destroy
-    render json: { message: "Artist successfully removed" }
+    render json: { message: "Artist removed successfully" }
   end
 end

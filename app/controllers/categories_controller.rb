@@ -4,7 +4,7 @@ class CategoriesController < ApplicationController
       name: params[:name],
     )
     if @category.save
-      render json: { message: "Category added successfully" }
+      render json: { message: "Category created successfully" }
     else
       render json: { errors: @category.errors.full_messages }
     end
@@ -13,6 +13,6 @@ class CategoriesController < ApplicationController
   def destroy
     @category = category.find_by(id: params[:id])
     @category.destroy
-    render json: { message: "Category successfully removed" }
+    render json: { message: "Category removed successfully" }
   end
 end
