@@ -51,7 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_06_164041) do
 
   create_table "painting_categories", force: :cascade do |t|
     t.integer "painting_id"
-    t.datetime "created_at", null: falseg
+    t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "category_id"
   end
