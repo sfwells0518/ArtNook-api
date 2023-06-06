@@ -1,2 +1,0 @@
-class PaintingCategoriesController < ApplicationController
-end

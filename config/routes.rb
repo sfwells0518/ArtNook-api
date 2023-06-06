@@ -30,6 +30,7 @@ Rails.application.routes.draw do
 
   #Category Routes:
   post "/categories" => "categories#create" #admin
+  delete "/categories/:id" => "categories#destroy" #admin
 
 end
 
