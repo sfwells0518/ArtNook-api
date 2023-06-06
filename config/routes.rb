@@ -14,8 +14,6 @@ Rails.application.routes.draw do
   delete "/paintings/:id" => "paintings#destroy" #admin
 
   #Artist Routes ----> DO I NEED THESE?#
-  get "/artists" => "artists#index" #all users
-  get "/artists/:id" => "artists#show" #all users
   post "/artists" => "artists#create" #admin
   patch "/artists/:id" => "artists#update" #admin
   delete "/artists/:id" => "artists#destroy" #admin

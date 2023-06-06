@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  # New User Sign Up
   def create
     user = User.new(
       full_name: params[:full_name],
@@ -12,5 +13,12 @@ class UsersController < ApplicationController
     else
       render json: { errors: user.errors.full_messages }, status: :bad_request 
     end 
+  end
+
+  # Remove User
+  def destroy
+    @user = User.find_by(id: params[:id])
+    @user.destroy
+    render json: { message: "User has been successfully removed" }
   end
 end
