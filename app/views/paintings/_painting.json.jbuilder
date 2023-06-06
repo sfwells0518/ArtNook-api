@@ -1,2 +1,6 @@
-json.extract! painting, :id, :created_at, :updated_at
-json.url painting_url(painting, format: :json)
+json.id painting.id
+json.name painting.name 
+json.artist_id painting.artist_id
+json.year painting.year
+json.price painting.price
+json.painting_image painting.painting_image

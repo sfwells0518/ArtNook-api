@@ -1,2 +1,7 @@
-json.extract! carted_painting, :id, :created_at, :updated_at
-json.url carted_painting_url(carted_painting, format: :json)
+json.id carted_painting.id
+json.user_id carted_painting.user_id
+json.painting_id carted_painting.painting_id
+json.painting carted_painting.painting
+json.quantity carted_painting.quantity
+json.status carted_painting.status
+json.order_id carted_painting.order_id
