@@ -4,8 +4,8 @@ class Painting < ApplicationRecord
   belongs_to :user
   belongs_to :artist
   has_many :orders
-  has_many :painting_categories
-  has_many :categories, through: :painting_categories
+  has_many :category_paintings 
+  has_many :categories, through: :category_paintings 
   has_many :carted_paintings
 
   # Tax & Total 

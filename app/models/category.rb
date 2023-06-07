@@ -1,5 +1,5 @@
 class Category < ApplicationRecord
   # Associations
-  has_many :painting_categories
-  has_many :paintings, through: :painting_categories
+  has_many :category_paintings 
+  has_many :paintings, through: :category_paintings 
 end
