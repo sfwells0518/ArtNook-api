@@ -1,7 +1,6 @@
 class Painting < ApplicationRecord
   # Associations
 
-  belongs_to :user
   belongs_to :artist
   has_many :orders
   has_many :category_paintings 
