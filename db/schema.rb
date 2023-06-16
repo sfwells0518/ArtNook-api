@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_07_162742) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_16_200737) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,6 +21,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_07_162742) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "date_of_birth"
+    t.string "artist_image"
   end
 
   create_table "carted_paintings", force: :cascade do |t|
@@ -37,6 +38,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_07_162742) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "description"
   end
 
   create_table "category_paintings", force: :cascade do |t|
