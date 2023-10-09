@@ -18,11 +18,7 @@ Rails.application.routes.draw do
   patch "/artists/:id" => "artists#update" #admin
   delete "/artists/:id" => "artists#destroy" #admin
 
-  #Carted_Painting Routes:
-  post "/carted_paintings" => "carted_paintings#create"
-  get "/carted_paintings" => "carted_paintings#index" 
-  delete "/carted_paintings/:id" => "carted_paintings#destroy"
-
+ 
   #Order Routes:
   post "/orders" => "orders#create" #all users 
   get "orders/:id" => "orders#show" #all users
